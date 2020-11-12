@@ -16,8 +16,9 @@ function App() {
   return (
      <StyledApp>
        <AppProvider>
+         
          <NavBar/>
-          <Dashboard/>
+         <Dashboard/>
        </AppProvider>
     </StyledApp>
   );

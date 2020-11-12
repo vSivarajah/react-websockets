@@ -5,13 +5,14 @@ import axios from 'axios';
 export const AppContext = createContext();
 
 
+
 export default function(props) {
     const [test, setTest ] = useState('hello world');
 
     return (
-        <AppContext.Provider value={[
+        <AppContext.Provider value={{
             test, setTest,
-        ]}>
+        }}>
             {props.children}
         </AppContext.Provider>
     )
