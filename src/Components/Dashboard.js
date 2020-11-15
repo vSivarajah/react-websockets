@@ -10,11 +10,14 @@ const StyledDashboard = styled.div`
 
 export function Dashboard() {
     const appState = useContext(AppContext)
+    const { rs } = useContext(AppContext)
+
 
     return (
         <StyledDashboard>
             <ReactJson src={appState} collapsed={true}/>
-            { appState["test"] }
+            Ready State: { rs }
+
         </StyledDashboard>
     )
 }
